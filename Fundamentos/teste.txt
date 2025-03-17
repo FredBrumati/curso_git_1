@@ -1,3 +1,9 @@
 Oi, tudo bem?
 
 git add (nome do arquivo) : Adiciona um arquivo no projeto
+git add . : Adiciona todos os arquivos 
+
+git status : Mostra os satatus do projeto
+
+git commit (nome do arquivo) -m ("Mensagem") : Envia um arquivo para o GitHub
+git commit -a -m : Envia todos os arquivos 
