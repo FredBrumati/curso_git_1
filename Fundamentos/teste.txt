@@ -7,3 +7,5 @@ git status : Mostra os satatus do projeto
 
 git commit (nome do arquivo) -m ("Mensagem") : Envia um arquivo para o GitHub
 git commit -a -m : Envia todos os arquivos 
+
+git pull : Puxa arquivos e atualizações direto do GitHub para o projeto 
