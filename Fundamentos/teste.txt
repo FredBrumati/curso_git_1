@@ -1,15 +1,40 @@
-Oi, tudo bem?
+🧾 Ordem para envio de um repositório:
+git add . → Adiciona todos os arquivos modificados
 
-git add (nome do arquivo) : Adiciona um arquivo no projeto
-git add . : Adiciona todos os arquivos 
+git commit -a -m "mensagem" → Salva o commit com uma mensagem
 
-git status : Mostra os satatus do projeto
+git push → Envia o commit para o GitHub
+💡 Obs: git commit -a -m não inclui arquivos novos — apenas os que já foram rastreados anteriormente com git add
 
-git commit (nome do arquivo) -m ("Mensagem") : Envia um arquivo para o projeto
-git commit -a -m : Envia todos os arquivos 
 
-git push : Envia um arquivo para o GitHub
+📌 Comandos principais do Git:
+git add (nome do arquivo) → Adiciona um arquivo específico ao projeto
 
-git pull : Puxa arquivos e atualizações direto do GitHub para o projeto 
+git add . → Adiciona todos os arquivos modificados  📍
 
-git clone (link HTTPS) . : Clona um repositório 
+git status → Mostra o status atual dos arquivos no projeto
+
+git commit (nome do arquivo) -m "mensagem" → Faz commit de um arquivo com mensagem
+
+git commit -a -m "mensagem" → Faz commit de todos os arquivos já adicionados  📍
+
+git push → Envia os commits locais para o GitHub  📍
+
+git pull → Baixa atualizações do GitHub para o seu projeto local
+
+git clone (link HTTPS) . → Clona um repositório (na pasta atual)
+⚠️ Use com cuidado: se a pasta não estiver vazia, pode dar erro. O mais comum é: git clone (link HTTPS)
+
+
+Manipulação de arquivos:
+git rm (nome do arquivo) → Remove um arquivo do repositório
+⚠️ Precisa fazer os passos (2) e (3) da ordem de envio após isso.
+
+git mv (arquivo) (pasta/arquivo) → Move um arquivo para uma pasta
+⚠️ Também exige commit e push depois.
+
+git mv (arquivo) (novo_nome) → Renomeia um arquivo
+⚠️ Também exige commit e push depois.
+
+git checkout (nome do arquivo) → Reverte um arquivo para a última versão salva
+✅ Ainda funciona, mas o Git moderno recomenda usar: git restore (nome do arquivo)
