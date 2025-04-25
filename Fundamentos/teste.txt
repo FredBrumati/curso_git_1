@@ -1,3 +1,21 @@
+✅ Checklist: Iniciando um Projeto com Git
+
+📁 1. Vá até a pasta do projeto
+cd nome-da-pasta
+
+🌀 2. Inicie o repositório Git
+git init
+☑️ Agora a pasta está sendo rastreada pelo Git.
+
+🗂️ 3. Crie qualquer arquivo EX(texto.txt alguma_coisa.py)
+→ Necessário para os proximos passos
+
+➕ 4. Adicione os arquivos ao Git
+git add .
+
+📝 5. Faça o primeiro commit
+git commit -a -m "primeiro commit"
+
 🧾 Ordem para envio de um repositório:
 git add . → Adiciona todos os arquivos modificados
 
@@ -38,3 +56,20 @@ git mv (arquivo) (novo_nome) → Renomeia um arquivo
 
 git checkout (nome do arquivo) → Reverte um arquivo para a última versão salva
 ✅ Ainda funciona, mas o Git moderno recomenda usar: git restore (nome do arquivo)
+
+🧱 .gitignore
+O arquivo .gitignore define quais arquivos e pastas devem ser ignorados pelo Git. 📍
+Exemplos:
+Ignorar um arquivo:
+texto.txt
+Ignorar todos os arquivos de uma pasta:
+assets/*
+⚠️ Todos os arquivos dentro da pasta serão ignorados.
+
+♻️ Reset de repositório
+git reset --hard origin/master
+→ Restaura o repositório local para o estado do GitHub (apaga commits locais que não foram enviados).
+
+
+
+
