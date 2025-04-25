@@ -16,6 +16,21 @@ git add .
 📝 5. Faça o primeiro commit
 git commit -a -m "primeiro commit"
 
+🔀 6. git branch -M main
+Esse comando renomeia a branch atual para "main".
+git branch -M main
+
+🌐 7. Crie um repositório no GitHub
+→ Vá para github.com, clique em "New Repository" e crie um repositório vazio (sem README).
+
+🔗 8. Conecte seu projeto local ao GitHub
+git remote add origin (Link fornecido)
+
+🚀 9. Envie seu projeto para o GitHub
+git push -u origin master
+
+-------------------------------------------------------------------------------------------------------------------------
+
 🧾 Ordem para envio de um repositório:
 git add . → Adiciona todos os arquivos modificados
 
