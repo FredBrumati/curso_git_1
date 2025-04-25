@@ -85,6 +85,16 @@ assets/*
 git reset --hard origin/master
 → Restaura o repositório local para o estado do GitHub (apaga commits locais que não foram enviados).
 
+-------------------------------------------------------------------------------------------------------------------------
+🌿 Branch (Ramificações no Git)
+Uma branch é como uma "linha do tempo paralela" do projeto, usada para desenvolver funcionalidades sem interferir no código principal.
 
-
+🔹 Conceito
+Quando um projeto Git é criado, ele inicia na branch padrão chamada master (ou main, no padrão mais atual).
+Por padrão, você está trabalhando nela até criar uma nova branch.
+Cada nova funcionalidade ou correção geralmente é feita em uma branch separada, para evitar conflitos e manter o código organizado.
+🛠️ Vantagens de usar branches:
+✅ Permite desenvolver novas ideias sem afetar o código estável
+✅ Facilita o trabalho em equipe (cada pessoa pode trabalhar em uma branch diferente)
+✅ Ajuda a organizar e revisar as mudanças antes de integrá-las ao projeto principal
 
