@@ -98,3 +98,6 @@ Cada nova funcionalidade ou correção geralmente é feita em uma branch separad
 ✅ Facilita o trabalho em equipe (cada pessoa pode trabalhar em uma branch diferente)
 ✅ Ajuda a organizar e revisar as mudanças antes de integrá-las ao projeto principal
 
+-------------------------------------------------------------------------------------------------------------------------
+git branch → para visualizar os branchs disponíveis
+git branch <nome> → Para Criar um branch
