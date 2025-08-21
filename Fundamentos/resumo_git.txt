@@ -101,3 +101,15 @@ Cada nova funcionalidade ou correção geralmente é feita em uma branch separad
 -------------------------------------------------------------------------------------------------------------------------
 git branch → para visualizar os branchs disponíveis
 git branch <nome> → Para Criar um branch
+flag com git branch -d <nome> ou --delete <nome> → para deletar um branch (Não é comum deletar, normalmente guardamos no hitórico do trabahlo.)
+git checkout <nome> → Podemos mudar para outro branch
+flag git checkout -b → Cria e muda para o branch
+git marge <nome> → O código de dois branches destintos pode ser unidos
+
+git stash → Para salvar modificações atuais para prosseguir com uma outra abordagem de solução e não perder o codigo
+git stash list → para vereficar as stashs criadas 
+git stash <nome> → para recuperar a stash 
+git stash show -p <nome> → Para ver e verificar oque foi modificado na stash
+git stash apply <nome> → Volta a stash para a branch
+git stash clear → Para remover todas as stash criadas em um branch
+git stash drop <nome> → Para remover uma específica 
