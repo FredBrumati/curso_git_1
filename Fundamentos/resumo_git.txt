@@ -116,3 +116,7 @@ git show <nome> → Mostra informações da tag.
 git checkout <nome> → Muda para a versão da tag.
 git push origin <nome> → Envia uma tag específica para o repositório remoto.
 git push origin --tags → Envia todas as tags de uma vez.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+git fetch → Para você ser atualizado de todos os branchs e tags que ainda não estão reconhecidos por você
