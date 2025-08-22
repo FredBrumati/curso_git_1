@@ -30,45 +30,31 @@ git remote add origin (Link fornecido)
 git push -u origin master
 
 -------------------------------------------------------------------------------------------------------------------------
-
 🧾 Ordem para envio de um repositório:
 git add . → Adiciona todos os arquivos modificados
-
 git commit -a -m "mensagem" → Salva o commit com uma mensagem
-
 git push → Envia o commit para o GitHub
 💡 Obs: git commit -a -m não inclui arquivos novos — apenas os que já foram rastreados anteriormente com git add
 
 
 📌 Comandos principais do Git:
 git add (nome do arquivo) → Adiciona um arquivo específico ao projeto
-
 git add . → Adiciona todos os arquivos modificados  📍
-
 git status → Mostra o status atual dos arquivos no projeto
-
 git commit (nome do arquivo) -m "mensagem" → Faz commit de um arquivo com mensagem
-
 git commit -a -m "mensagem" → Faz commit de todos os arquivos já adicionados  📍
-
 git push → Envia os commits locais para o GitHub  📍
-
 git pull → Baixa atualizações do GitHub para o seu projeto local
-
 git clone (link HTTPS) . → Clona um repositório (na pasta atual)
 ⚠️ Use com cuidado: se a pasta não estiver vazia, pode dar erro. O mais comum é: git clone (link HTTPS)
-
 
 Manipulação de arquivos:
 git rm (nome do arquivo) → Remove um arquivo do repositório
 ⚠️ Precisa fazer os passos (2) e (3) da ordem de envio após isso.
-
 git mv (arquivo) (pasta/arquivo) → Move um arquivo para uma pasta
 ⚠️ Também exige commit e push depois.
-
 git mv (arquivo) (novo_nome) → Renomeia um arquivo
 ⚠️ Também exige commit e push depois.
-
 git checkout (nome do arquivo) → Reverte um arquivo para a última versão salva
 ✅ Ainda funciona, mas o Git moderno recomenda usar: git restore (nome do arquivo)
 
@@ -99,17 +85,34 @@ Cada nova funcionalidade ou correção geralmente é feita em uma branch separad
 ✅ Ajuda a organizar e revisar as mudanças antes de integrá-las ao projeto principal
 
 -------------------------------------------------------------------------------------------------------------------------
-git branch → para visualizar os branchs disponíveis
-git branch <nome> → Para Criar um branch
-flag com git branch -d <nome> ou --delete <nome> → para deletar um branch (Não é comum deletar, normalmente guardamos no hitórico do trabahlo.)
-git checkout <nome> → Podemos mudar para outro branch
-flag git checkout -b → Cria e muda para o branch
-git marge <nome> → O código de dois branches destintos pode ser unidos
+🌿 Branches (Ramificações)
+Um branch é como uma linha do tempo separada do projeto. Serve para desenvolver algo sem mexer no código principal.
+📌 Comandos principais:
+git branch → Lista todos os branches disponíveis.
+git branch <nome> → Cria um novo branch.
+git branch -d <nome> ou git branch --delete <nome> → Deleta um branch.
+⚠️ Não é muito comum deletar branchs locais — normalmente guardamos o histórico.
+git checkout <nome> → Muda para outro branch.
+git checkout -b <nome> → Cria e já muda para o branch novo.
+git merge <nome> → Une o código de outro branch no branch atual.
 
-git stash → Para salvar modificações atuais para prosseguir com uma outra abordagem de solução e não perder o codigo
-git stash list → para vereficar as stashs criadas 
-git stash <nome> → para recuperar a stash 
-git stash show -p <nome> → Para ver e verificar oque foi modificado na stash
-git stash apply <nome> → Volta a stash para a branch
-git stash clear → Para remover todas as stash criadas em um branch
-git stash drop <nome> → Para remover uma específica 
+📦 Git Stash (Guardar alterações temporárias)
+O stash é útil quando você está no meio de uma modificação, mas precisa trocar de branch ou pausar o que está fazendo.
+📌 Comandos principais:
+git stash → Salva as alterações não commitadas em uma “pilha” temporária.
+git stash list → Mostra todas as stashes salvas.
+git stash show -p <id> → Mostra o que foi modificado na stash.
+git stash apply <id> → Recupera uma stash (mantém ela na lista).
+git stash drop <id> → Remove uma stash específica.
+git stash clear → Remove todas as stashes.
+💡 Obs: normalmente o <id> da stash é algo como stash@{0}, stash@{1}, etc.
+
+🏷️ Git Tags (Checkpoints)
+As tags funcionam como marcos/checkpoints do projeto. Muito usadas para marcar versões estáveis (ex: v1.0, release-2025).
+📌 Comandos principais:
+git tag -a <nome> -m "mensagem" → Cria uma nova tag anotada com descrição.
+git tag → Lista todas as tags existentes.
+git show <nome> → Mostra informações da tag.
+git checkout <nome> → Muda para a versão da tag.
+git push origin <nome> → Envia uma tag específica para o repositório remoto.
+git push origin --tags → Envia todas as tags de uma vez.
