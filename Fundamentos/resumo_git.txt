@@ -120,3 +120,12 @@ git push origin --tags → Envia todas as tags de uma vez.
 -------------------------------------------------------------------------------------------------------------------------
 
 git fetch → Para você ser atualizado de todos os branchs e tags que ainda não estão reconhecidos por você
+git remote → Para fazer alguma ação como: adicionar um repo para trackear ou remover
+git remote rm <nome> → Para remover 
+flag -v → Para ver as origens
+git remote add origen <link> → Para adicionar um repo remotamente criado 
+git submodule → Para vereficar os submódulos 
+git submodule add <repo> → Para adicionar o submódulo
+git push --recurse-submodules=on-demand →  Para enviar para o repo do submódulo 
+
+-------------------------------------------------------------------------------------------------------------------------
