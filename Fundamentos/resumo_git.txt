@@ -118,14 +118,32 @@ git push origin <nome> → Envia uma tag específica para o repositório remoto.
 git push origin --tags → Envia todas as tags de uma vez.
 
 -------------------------------------------------------------------------------------------------------------------------
+🌍 Repositórios Remotos
+Um repositório remoto é a versão do seu projeto que está hospedada no GitHub (ou outro servidor).
 
-git fetch → Para você ser atualizado de todos os branchs e tags que ainda não estão reconhecidos por você
-git remote → Para fazer alguma ação como: adicionar um repo para trackear ou remover
-git remote rm <nome> → Para remover 
-flag -v → Para ver as origens
-git remote add origen <link> → Para adicionar um repo remotamente criado 
-git submodule → Para vereficar os submódulos 
-git submodule add <repo> → Para adicionar o submódulo
-git push --recurse-submodules=on-demand →  Para enviar para o repo do submódulo 
+📌 Comandos principais:
+git fetch
+→ Atualiza as informações do repositório remoto (branches e tags), mas não altera seus arquivos locais.
+💡 Diferente do git pull, ele não faz merge automático.
+git remote
+→ Lista os repositórios remotos configurados.
+git remote -v
+→ Mostra os links (URLs) dos repositórios remotos.
+git remote add origin <link>
+→ Adiciona um repositório remoto.
+git remote rm <nome>
+→ Remove um repositório remoto configurado.
 
+📦 Submódulos (Submodules)
+Submódulos permitem adicionar um repositório Git dentro de outro repositório.
+🔹 Muito usado quando você quer reutilizar um projeto externo dentro do seu.
+
+📌 Comandos principais:
+git submodule
+→ Lista os submódulos existentes no projeto.
+git submodule add <link-do-repo>
+→ Adiciona um novo submódulo ao projeto.
+git push --recurse-submodules=on-demand
+→ Envia alterações garantindo que os submódulos também sejam enviados corretamente.
+⚠️ Submódulos exigem cuidado extra, pois possuem controle de versão separado do projeto principal.
 -------------------------------------------------------------------------------------------------------------------------
