@@ -147,3 +147,83 @@ git push --recurse-submodules=on-demand
 → Envia alterações garantindo que os submódulos também sejam enviados corretamente.
 ⚠️ Submódulos exigem cuidado extra, pois possuem controle de versão separado do projeto principal.
 -------------------------------------------------------------------------------------------------------------------------
+🔎 Inspeção e Comparação no Git
+📖 git show
+Exibe informações detalhadas sobre commits, tags e estado atual do repositório.
+📌 Uso:
+git show
+→ Mostra informações do commit atual, incluindo:
+Autor
+Data
+Mensagem
+Alterações feitas nos arquivos
+git show <tag>
+→ Exibe as informações de uma tag específica.
+💡 Também pode ser usado com o hash de um commit:
+git show <hash-do-commit>
+
+🔍 git diff
+Mostra as diferenças entre versões de arquivos ou branches.
+📌 Uso:
+git diff
+→ Mostra alterações feitas nos arquivos ainda não commitados.
+git diff <arquivo>
+→ Mostra as mudanças feitas em um arquivo específico.
+git diff <arquivo1> <arquivo2>
+→ Compara dois arquivos diferentes.
+💡 Muito usado para revisar mudanças antes de fazer commit.
+
+📊 git shortlog
+Exibe um resumo do histórico do projeto.
+git shortlog
+→ Mostra os commits agrupados por autor.
+✔️ Útil para visualizar:
+Quantidade de commits por pessoa
+Organização da equipe
+Resumo geral do histórico
+-------------------------------------------------------------------------------------------------------------------------
+🛠️ Administração e Manutenção do Repositório
+🧹 git clean
+Remove arquivos não rastreados (untracked), ou seja, arquivos que nunca passaram por git add.
+📌 Uso:
+git clean -f
+→ Remove arquivos não rastreados.
+⚠️ O -f (force) é obrigatório para realmente executar a limpeza.
+💡 Use com cuidado, pois os arquivos removidos não podem ser recuperados pelo Git.
+
+♻️ git gc (Garbage Collector)
+gc significa garbage collector.
+git gc
+→ Remove arquivos desnecessários e otimiza o repositório.
+✔️ Limpa objetos que não estão mais sendo usados
+✔️ Melhora performance
+✔️ Organiza o armazenamento interno
+💡 O Git já executa isso automaticamente em alguns momentos.
+
+🔍 git fsck
+Verifica a integridade do repositório.
+git fsck
+→ Analisa:
+Conectividade dos objetos
+Possíveis corrupções
+Problemas estruturais
+✔️ Muito usado para diagnóstico quando algo parece errado no repositório.
+
+📜 git reflog
+Registra todas as movimentações feitas no repositório local, incluindo:
+Commits
+Mudança de branch
+Reset
+Merge
+Rebase
+git reflog
+→ Mostra um histórico detalhado das ações locais.
+💡 Muito útil para recuperar commits perdidos.
+⏳ O histórico do reflog normalmente fica disponível por cerca de 30 dias (configurável).
+
+📦 git archive
+Permite gerar um arquivo compactado do projeto.
+📌 Exemplo:
+git archive --format=zip --output=master_files.zip master
+→ Gera um arquivo .zip da branch master.
+✔️ Muito usado para distribuir o projeto sem incluir o histórico do Git.
