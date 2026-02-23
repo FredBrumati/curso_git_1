@@ -227,3 +227,56 @@ Permite gerar um arquivo compactado do projeto.
 git archive --format=zip --output=master_files.zip master
 → Gera um arquivo .zip da branch master.
 ✔️ Muito usado para distribuir o projeto sem incluir o histórico do Git.
+-------------------------------------------------------------------------------------------------------------------------
+📝 A Importância do Commit
+🚨 O Problema
+Commits sem sentido como:
+“alterações” | “teste” | “mudanças” | “ajustes”
+❌ Dificultam o entendimento do projeto
+❌ Atrapalham revisão de código
+❌ Complicam manutenção futura
+
+🎯 Por que padronizar commits?
+Padronizar commits ajuda o projeto a crescer de forma saudável.
+✔️ Benefícios:
+Melhor revisão de Pull Requests
+Histórico mais organizado no git log
+Facilidade para voltar versões do código
+Melhor entendimento do que foi alterado e por quê
+
+🌿 Private Branches (Branches Privadas)
+Quando estamos desenvolvendo algo e ainda não queremos compartilhar commits “bagunçados”, podemos:
+✔️ Criar uma branch privada
+✔️ Trabalhar livremente nela
+✔️ Depois organizar os commits antes de enviar
+
+🔄 Rebase Interativo
+Após finalizar a funcionalidade, podemos organizar os commits com:
+git rebase -i <branch-base>
+Exemplo:
+git rebase -i main
+O modo interativo permite:
+🔀 squash → Unir commits
+✏️ reword → Alterar mensagem do commit
+❌ Remover commits desnecessários
+🔄 Reorganizar a ordem dos commits
+💡 Isso deixa o histórico mais limpo e profissional antes de compartilhar.
+
+✍️ Boas Mensagens de Commit
+Uma boa mensagem de commit deve ser clara e objetiva.
+📌 Estrutura recomendada:
+🧾 Assunto (título)
+Máximo de 50 caracteres
+Primeira letra maiúscula
+Sem ponto final
+📄 Corpo (opcional, mas recomendado)
+Máximo de 72 caracteres por linha
+Explicar o porquê da mudança
+Explicar o que foi feito
+❗ Não explicar linha por linha do código
+
+🔗 Referência de Padrão de Commits
+Para padronização profissional de mensagens de commit, consulte:
+📘 Conventional Commits (documentação oficial):
+https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/
+
