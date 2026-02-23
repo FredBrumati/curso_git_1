@@ -279,4 +279,8 @@ Explicar o que foi feito
 Para padronização profissional de mensagens de commit, consulte:
 📘 Conventional Commits (documentação oficial):
 https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/
-
+-------------------------------------------------------------------------------------------------------------------------
+Criando repositorio 
+no github inicializamos os repositorios e temos algumas informções importantes para preencher vamos velas em detalhes;
+algumas delas são :nome do repo, descrição , licença;
+tudo pode ser alterado ao longo do seu projeto, mas é interessante conhecer os detalhes das info para config um porjeto;
