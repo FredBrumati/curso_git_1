@@ -280,7 +280,95 @@ Para padronização profissional de mensagens de commit, consulte:
 📘 Conventional Commits (documentação oficial):
 https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/
 -------------------------------------------------------------------------------------------------------------------------
-Criando repositorio 
-no github inicializamos os repositorios e temos algumas informções importantes para preencher vamos velas em detalhes;
-algumas delas são :nome do repo, descrição , licença;
-tudo pode ser alterado ao longo do seu projeto, mas é interessante conhecer os detalhes das info para config um porjeto;
+🌐 GitHub — Estrutura do Repositório
+
+📦 Criando um Repositório
+No GitHub criamos repositórios preenchendo algumas informações importantes:
+📌 Informações iniciais:
+Nome do repositório
+Descrição
+Licença
+💡 Essas informações podem ser alteradas depois, mas é importante configurá-las corretamente no início do projeto.
+📑 Principais Abas do GitHub
+
+💻 Aba Code
+Na aba Code encontramos as principais informações do repositório:
+Código fonte do projeto
+Arquivo README.md (documentação)
+Arquivo de licença
+Criação de branches
+Upload de arquivos
+📌 É a aba mais utilizada no dia a dia.
+
+🐞 Aba Issues
+A aba Issues serve para organizar tarefas e problemas do projeto.
+Podemos usar para:
+Reportar bugs
+Criar tarefas
+Planejar novas funcionalidades
+💡 Boas práticas:
+Cada issue deve ter uma label
+Deve ter um responsável
+Podemos usar Markdown na descrição
+
+🔀 Aba Pull Requests
+A aba Pull Requests é usada para enviar alterações de código para o projeto.
+📌 Fluxo comum:
+1️⃣ Criar um branch
+2️⃣ Fazer alterações no código
+3️⃣ Enviar para o repositório
+4️⃣ Criar um Pull Request
+⚠️ O código não deve ir direto para a branch principal, ele deve ser revisado antes.
+
+⚙️ Aba Actions
+A aba Actions permite criar automatizações no projeto.
+Exemplos:
+Integração contínua (CI)
+Deploy automático (CD)
+Execução de testes automáticos
+💡 Muito utilizada para automatizar processos do projeto.
+
+📋 Aba Projects
+Na aba Projects podemos criar quadros de organização de tarefas.
+Esse modelo utiliza o sistema Kanban.
+📌 Estrutura comum:
+Backlog
+Em desenvolvimento
+Em teste
+Finalizado
+💡 A interface é parecida com o Trello.
+
+📚 Aba Wiki
+A aba Wiki permite criar uma documentação mais detalhada do projeto.
+Podemos documentar:
+Funcionalidades
+Bugs conhecidos
+Informações técnicas
+Guias de uso
+📌 Funciona como uma base de conhecimento do projeto.
+
+📊 Aba Insights
+A aba Insights mostra estatísticas do projeto.
+Exemplos:
+Contribuidores
+Commits
+Forks
+Atividade do repositório
+💡 Útil para acompanhar a evolução do projeto.
+
+⚙️ Aba Settings
+Na aba Settings encontramos as configurações do repositório.
+Podemos:
+Alterar o nome do repositório
+Adicionar colaboradores
+Ativar ou desativar funcionalidades
+Excluir o repositório
+⚠️ A exclusão do repositório também é feita nesta aba.
+
+🧩 GitHub Gist
+Gist são pequenos blocos de código hospedados no GitHub.
+Podemos usar para:
+Guardar soluções rápidas
+Compartilhar trechos de código
+Salvar exemplos úteis
+📌 Cada Gist funciona como um pequeno repositório com um link compartilhável.
